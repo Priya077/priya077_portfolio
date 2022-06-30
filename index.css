@@ -1,0 +1,235 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url('back5.gif');
+    background-repeat: repeat;
+    background-attachment: fixed;
+   }
+
+h1{
+  color:rgb(202, 243, 89);
+}
+#home{
+   padding:50px;
+   text-align: center;
+   
+   }
+#home p{
+  padding:60px;
+}
+#edu{
+  background-color:rgba(0,128,128,0.4);
+  text-align:left;
+  color:white;
+  margin:auto;
+  padding:30px;
+  width:68%;
+  box-shadow: 1px 1px 5px 3px grey;
+  }
+#project{
+  background-color:rgba(153,0,0,0.4);
+  text-align:center;
+  color:white;
+  margin:auto;
+  padding:30px;
+  width:68%;
+  overflow:auto;
+  box-shadow: 1px 1px 5px 3px grey;
+  }
+#sub{
+  width:250px;
+  padding:5px;
+  border:2px solid gray;
+  margin:auto;
+  }
+img{
+  margin-top:50px;
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  box-shadow:0 0 0 3px grey,0 0 0 4px white, 0 0 0 6px grey;
+  }
+
+#skill{
+  background-color:rgba(153,0,0,0.4);
+  color:white;
+  text-align:center;
+  margin:auto;
+  padding:30px;
+  width:68%;
+  box-shadow: 1px 1px 5px 3px grey;
+  }
+#skill ul{
+  font-size:20px;
+  line-height:1.5;
+  list-style:none;}
+#skill ul li{
+  display: inline-block;
+  padding:20px;
+}
+#achievement{
+  background-color:rgba(0,128,128,0.4);
+  text-align:center;
+  justify-content:center;
+  color:white;
+  margin:auto;
+  padding:30px;
+  width:68%;
+  box-shadow: 1px 1px 5px 3px grey;
+  }
+#achievement ul{
+  font-size:20px;
+  line-height:1.5;
+  }
+#achievement ul li{
+  text-align:left;
+  padding:12px;
+  list-style: none;}
+#certi{
+  background-color:rgba(0,128,128,0.4);
+  text-align:center;
+  color:white;
+  margin:auto;
+  padding:60px;
+  width:68%; 
+  box-shadow: 1px 1px 5px 3px grey;
+  }
+#certi ul{
+    font-size:20px;
+    line-height:1.5;
+    }
+#certi ul li{
+    text-align:left;
+    padding:12px;
+    list-style: none;}
+#extra{
+    background-color:rgba(153,0,0,0.4);
+    text-align:center;
+    color:white;
+    margin:auto;
+    padding:30px;
+    width:68%;
+    box-shadow: 1px 1px 5px 3px grey; 
+    }
+#extra ul{
+  font-size:20px;
+  line-height:1.5;
+  }
+#extra ul li{
+  text-align:left;
+  padding:12px;
+  list-style: none;}
+#res{
+  background-color:rgba(0,128,128,0.4);
+  text-align:center;
+  justify-content:center;
+  color:white;
+  margin:auto;
+  padding:30px;
+  width:68%;
+  box-shadow: 1px 1px 5px 3px grey;
+  }
+#contact{
+  background-color:rgba(153,0,0,0.4);
+  align-items: center;
+  color:white;
+  margin:auto;
+  padding:30px;
+  width:68%;
+  box-shadow: 1px 1px 5px 3px grey;
+  }
+.heading{
+  align-items: center;
+}
+.heading>h1{
+  text-align:center;
+}
+.container{
+  justify-content:center;
+  width:98%;
+}
+.box1{
+  display: inline-block;
+  width: 18%;
+}
+.box3{
+  display: inline-block;
+  width: 28%;
+}
+.box2{
+  display: inline-block;
+  width: 50%;
+}
+.box2>p,.box1>p,.box3>p{
+  font-size: 16px;
+  text-align:center;
+  }
+
+#home{
+  text-align:center;
+  color:white;}
+#circle_img{
+  border-radius:50%;
+  border:2px solid rgb(119, 169, 197);
+  box-shadow: 2px 1px 1px rgb(130, 231, 223);
+  }
+#res> h2{
+    justify-content: center;
+    text-align:center;
+    font-size:26px;
+    text-decoration:underline;
+    color:yellow;
+  }
+#res,#project> p{
+    justify-content: center;
+    text-align:center;
+    font-size:20px;
+  }
+.footer{
+  color:white;
+  height:40px;
+}
+ .footer p{
+   margin:10px auto;
+   line-height:1.7;
+   text-align: right;
+   padding-right: 20px;
+ }
+@media (max-width: 720px) {
+    
+    .box1,.box2,.box3{
+      display:block;
+      width: 80%;
+    } 
+    .content{
+      margin:8px; padding:0; width:100%;
+    }
+    #home,#edu,#skill,#project,#extra,#contact,#achievement,#res,#certi{
+      width:100%;
+      margin:auto;
+      padding:10;
+      font-size:12px;
+    }
+ }
+@media (min-width: 720px) and (max-width: 1000px) {
+    
+    .box1,.box2,.box3{
+      display:inline-block;
+      width: 33%;
+    } 
+    .content{
+      margin:8px; padding:0; width:100%;
+    }
+    #home,#edu,#skill,#project,#extra,#contact,#achievement,#res,#certi{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+   #skill ul,#achievement ul,#certi ul,#extra ul,#res,#project> p,h1,h2,h3{
+      font-size:12px;
+    }
+  }
