@@ -249,8 +249,8 @@ img{
     }
     #home,#edu,#skill,#project,#extra,#contact,#achievement,#res,#certi{
       width:100%;
-      margin:0;
-      padding:0;
+      margin:5px;
+      padding:10px;
     }
    #skill ul,#achievement ul,#certi ul,#extra ul,#res,#project> p,h1,h2,h3{
       font-size:12px;
