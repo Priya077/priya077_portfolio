@@ -221,21 +221,100 @@ img{
     margin-bottom: 20px;
   }
     .content{
-      margin:8px; padding:0; width:100%;
+      margin:5px;padding:20px; width:100%;
     }
     #home,#edu,#skill,#project,#extra,#contact,#achievement,#res,#certi{
       width:100%;
       margin:auto;
       padding:8px;
-      font-size:12px;
     }
     #home p{
       padding:8px;
-      font-size:12px;
+      font-size:14px;
     }
+    #edu ul{
+        list-style-type:none;
+    }
+     #edu h1 {
+            padding: 6px;
+            font-size: 20px;
+        }
+     #edu h2 {
+            padding: 6px;
+            font-size: 15px;
+        }
+     #edu h3 {
+            padding: 6px;
+            font-size: 12px;
+        }
+
+    #project h1 {
+            padding: 6px;
+            font-size: 20px;
+        }
+    #project h2 {
+            padding: 6px;
+            font-size: 16px;
+        }
     #project p{
       padding:8px;
-      font-size:12px;
+      font-size:14px;
+    }
+    #skill h1 {
+            padding: 6px;
+            font-size: 20px;
+        }
+    #skill ul {
+            padding: 6px;
+            font-size: 15px;
+        }
+    #certi h1 {
+            padding: 6px;
+            font-size: 20px;
+        }
+    #certi ul {
+            padding: 6px;
+            font-size: 15px;
+        }
+    #achievement h1 {
+            padding: 6px;
+            font-size: 20px;
+        }
+
+    #achievement li {
+            padding: 6px;
+            font-size: 15px;
+        }
+    #extra h1 {
+            padding: 6px;
+            font-size: 20px;
+        }
+    #extra li {
+            padding: 6px;
+            font-size: 15px;
+        }
+    #res h1{
+            padding: 6px;
+            font-size: 20px;
+        }
+    #res h2 {
+            padding: 6px;
+            font-size: 16px;
+        }
+     #res p {
+            padding: 8px;
+            font-size: 14px;
+        }
+    #contact h1 {
+            padding: 6px;
+            font-size: 20px;
+     }
+    #contact li{
+        padding:6px;
+        font-size: 15px;
+    }
+    .card{
+        font-size:10px;
     }
  }
 @media (min-width: 720px) and (max-width: 1000px) {
@@ -247,12 +326,13 @@ img{
     .content{
       margin:8px; padding:0; width:100%;
     }
-    #home,#edu,#skill,#project,#extra,#contact,#achievement,#res,#certi{
+        
+    /*#home,#edu,#skill,#project,#extra,#contact,#achievement,#res,#certi{
       width:100%;
       margin:5px;
-      padding:10px;
-    }
-   #skill ul,#achievement ul,#certi ul,#extra ul,#res,#project> p,h1,h2,h3{
-      font-size:12px;
-    }
+      padding:6px;
+    }*/
+    
+    
+   
   }
