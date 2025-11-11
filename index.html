@@ -1,191 +1,1612 @@
-<html>
-  <head>
-      <title>Portfolio</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="index.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-      
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#home"><span style="color:yellow;font-size: 32px;font-family: 'Great Vibes', cursive;">Priya Chowdhury</span></a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav">
-                      <li class="active"><a href="#home">About</a></li>
-                      <li><a href="#edu">Education</a></li>
-                      <li><a href="#skill">Skill</a></li>
-                      <li><a href="#certi">Certification</a></li>
-                      <li><a href="#project">Project</a></li>
-                      <li><a href="#achievement">Academic Achievements</a></li>
-                      <li><a href="#extra">Extracurricular activities</a></li>
-                      <li><a href="#res">Responsibilities</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Chowdhury - SDE II at S&amp;P Global | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+/* Design System */
+:root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Typography */
+  --font-family-base: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-color-scheme="dark"] {
+  --color-gray-400-rgb: 119, 124, 124;
+  --color-teal-300-rgb: 50, 184, 198;
+  --color-gray-300-rgb: 167, 169, 169;
+  --color-gray-200-rgb: 245, 245, 245;
+
+  --color-bg-1: rgba(29, 78, 216, 0.15);
+  --color-bg-2: rgba(180, 83, 9, 0.15);
+  --color-bg-3: rgba(21, 128, 61, 0.15);
+  --color-bg-4: rgba(185, 28, 28, 0.15);
+  --color-bg-5: rgba(107, 33, 168, 0.15);
+  --color-bg-6: rgba(194, 65, 12, 0.15);
+  --color-bg-7: rgba(190, 24, 93, 0.15);
+  --color-bg-8: rgba(8, 145, 178, 0.15);
+
+  --color-background: var(--color-charcoal-700);
+  --color-surface: var(--color-charcoal-800);
+  --color-text: var(--color-gray-200);
+  --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+  --color-primary: var(--color-teal-300);
+  --color-primary-hover: var(--color-teal-400);
+  --color-primary-active: var(--color-teal-800);
+  --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+  --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+  --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-error: var(--color-red-400);
+  --color-success: var(--color-teal-300);
+  --color-warning: var(--color-orange-400);
+  --color-info: var(--color-gray-300);
+  --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+  --color-btn-primary-text: var(--color-slate-900);
+  --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+  --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: var(--line-height-normal);
+  transition: background-color var(--duration-normal) var(--ease-standard), color var(--duration-normal) var(--ease-standard);
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-16) var(--space-24);
+  z-index: 1000;
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: var(--space-32);
+  list-style: none;
+  align-items: center;
+}
+
+.navbar-menu a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--duration-fast) var(--ease-standard);
+  font-size: var(--font-size-lg);
+}
+
+.navbar-menu a:hover {
+  color: var(--color-primary);
+}
+
+.theme-toggle {
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.theme-toggle:hover {
+  background: var(--color-secondary-hover);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .navbar-menu .theme-toggle {
+    display: none;
+  }
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-24);
+  background: var(--color-bg-1);
+  margin-top: 70px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-16);
+  line-height: var(--line-height-tight);
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-3xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-32);
+  font-weight: var(--font-weight-normal);
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  padding: var(--space-16) var(--space-32);
+  border-radius: var(--radius-base);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.cta-button:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+  padding: 80px var(--space-24);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: 60px;
+  font-size: var(--font-size-xl);
+}
+
+/* About Section */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text {
+  font-size: var(--font-size-xl);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-24);
+}
+
+.about-highlights {
+  display: flex;
+  gap: var(--space-24);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-32);
+}
+
+.highlight-item {
+  background: var(--color-bg-2);
+  padding: var(--space-20) var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  min-width: 200px;
+}
+
+.highlight-title {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-8);
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-32);
+}
+
+.project-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-12);
+}
+
+.project-description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-16);
+  line-height: 1.6;
+  font-size: var(--font-size-lg);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+}
+
+.tech-tag {
+  background: var(--color-secondary);
+  color: var(--color-text);
+  padding: var(--space-6) var(--space-12);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.project-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.project-link:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Project Links/Buttons */
+.project-links {
+  display: flex;
+  gap: var(--space-12);
+  margin-top: var(--space-20);
+  padding-top: var(--space-20);
+  border-top: 1px solid var(--color-card-border-inner);
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-10) var(--space-20);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.project-btn-github {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  flex: 1;
+  justify-content: center;
+}
+
+.project-btn-github:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.project-btn-github svg {
+  flex-shrink: 0;
+}
+
+.project-btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+  flex: 1;
+  justify-content: center;
+}
+
+.project-btn-secondary:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .project-links {
+    flex-direction: column;
+  }
+  
+  .project-btn {
+    width: 100%;
+  }
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-32);
+}
+
+.skill-category {
+  background: var(--color-bg-3);
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+}
+
+.skill-category-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-16);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.skill-item {
+  background: var(--color-surface);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  border: 1px solid var(--color-border);
+}
+
+/* Contact Section */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: var(--space-32);
+}
+
+.contact-item {
+  margin-bottom: var(--space-16);
+  font-size: var(--font-size-xl);
+}
+
+.contact-item a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: var(--color-primary-hover);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-20);
+  justify-content: center;
+  margin-top: var(--space-32);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  background: var(--color-secondary);
+  padding: var(--space-12) var(--space-20);
+  border-radius: var(--radius-base);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-fast) var(--ease-standard);
+  font-size: var(--font-size-lg);
+}
+
+.social-link:hover {
+  background: var(--color-secondary-hover);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-32) var(--space-24);
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-24);
+  justify-content: center;
+  list-style: none;
+  margin-bottom: var(--space-16);
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
+
+.footer-text {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+}
+
+/* Hero enhancements */
+.hero-intro {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: var(--space-24) auto;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-32);
+}
+
+.cta-primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+}
+
+.cta-secondary:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-primary);
+}
+
+/* Timeline Styles */
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: var(--space-32) 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: var(--space-32);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 4px solid var(--color-background);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.timeline-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.timeline-content:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.timeline-institution {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-6);
+}
+
+.timeline-duration {
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-6);
+}
+
+.timeline-grade {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-8);
+}
+
+.timeline-details {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-24);
+}
+
+.achievement-card {
+  background: var(--color-bg-4);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  text-align: center;
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.achievement-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-16);
+}
+
+.achievement-text {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* Activities Container */
+.activities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-24);
+}
+
+.activity-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.activity-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  margin-bottom: var(--space-12);
+}
+
+.activity-icon {
+  font-size: 32px;
+}
+
+.activity-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+.activity-description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background: var(--color-bg-5);
+  padding: 80px var(--space-24);
+}
+
+.contact-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-32);
+  align-items: start;
+}
+
+.contact-form-container {
+  position: relative;
+}
+
+.contact-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-32);
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: var(--space-20);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-8);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-12) var(--space-16);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-base);
+  transition: all var(--duration-fast) var(--ease-standard);
+  font-family: var(--font-family-base);
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.form-control::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  margin-top: var(--space-24);
+  font-size: var(--font-size-lg);
+  padding: var(--space-16) var(--space-32);
+}
+
+.submit-btn:hover .btn-icon {
+  transform: translateX(5px);
+}
+
+.btn-icon {
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.form-message {
+  margin-top: var(--space-20);
+  padding: var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  text-align: center;
+  display: none;
+}
+
+.form-message.success {
+  display: block;
+  background: rgba(var(--color-success-rgb), 0.15);
+  color: var(--color-success);
+  border: 1px solid rgba(var(--color-success-rgb), 0.3);
+}
+
+.form-message.error {
+  display: block;
+  background: rgba(var(--color-error-rgb), 0.15);
+  color: var(--color-error);
+  border: 1px solid rgba(var(--color-error-rgb), 0.3);
+}
+
+/* Contact Info Sidebar */
+.contact-info-sidebar {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-32);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-24);
+  color: var(--color-text);
+}
+
+.info-item {
+  display: flex;
+  gap: var(--space-16);
+  margin-bottom: var(--space-24);
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.info-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+  font-weight: var(--font-weight-medium);
+}
+
+.info-value {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+a.info-value:hover {
+  color: var(--color-primary);
+}
+
+.social-links-sidebar {
+  margin-top: var(--space-32);
+  padding-top: var(--space-24);
+  border-top: 1px solid var(--color-border);
+}
+
+.social-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: var(--space-12) var(--space-16);
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.social-btn:hover {
+  background: var(--color-secondary-hover);
+  border-color: var(--color-primary);
+  transform: translateX(3px);
+}
+
+.social-btn svg {
+  flex-shrink: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    flex-direction: column;
+    padding: var(--space-24);
+    gap: var(--space-20);
+    border-bottom: 1px solid var(--color-border);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--duration-normal) var(--ease-standard);
+  }
+
+  .navbar-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .navbar-actions .theme-toggle {
+    display: flex;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-highlights {
+    flex-direction: column;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-marker {
+    left: 5px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activities-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 60px var(--space-16);
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="navbar-logo">Priya</a>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
 
 
 
-      <div class="content">
-          <div id="home">
-              <h2 style="font-size: 28px;text-decoration:underline;font-family: 'Great Vibes', cursive;">About Me</h2>
-              <img class="circle_img" src="mypic.jpg"><br><br>
-              <p style="font-family:Cursive;color:whitesmoke;text-align:justify;">
-                  Hi, I am <span style="color:yellow;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Priya Chowdhury</span>, from Kolkata,West Bengal. I have completed graduation in Physics from West Bengal State University securing 2nd position.
-                  With a passion for technology and a robust academic background, I've obtained my Masters of Computer Applications from NIT Trichy. Currently, I'm an Associate Software Engineer at <span style="color:Red" ;>S&P Global</span>, where I'm excited to apply my skills to create innovative solutions. I love collaborating with others and am always eager to learn and grow. Let's make a difference together in the world of software engineering!
-              </p><br /><br /><br />
-              <a href="https://drive.google.com/file/d/1OL7LpGzrLM_KPKVElsszVcJXahew9xTM/view?usp=sharing" download="Resume_Priya_Chowdhury" target="_blank" style="width:100px; border-radius:20px 20px 20px 20px;background-color: rgba(153,0,0,0.6);padding:20px;color:white;font-size:16px;">
-                  Download Resume
-              </a><br />
-          </div><br /><br /><br />
-          <div id="edu">
-              <h1 style="font-style:italic;text-align:center;">Education...</h1><hr>
-              <h2 style="color:yellow;">National Institute of Technology, Tiruchirappalli&nbsp;&nbsp;<sub><a href="205120077_Transcript.pdf"><i class="medium material-icons" style="color:white;">link</i></a></sub></h2>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;       Master of Computer Applications(MCA)</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      2020-Present</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      Grade : 7.95*</h3><hr>
-              <h2 style="color:yellow;">Barrackpore Rastraguru Surendranath College, WBSU&nbsp;&nbsp;<sub><a href="UG-Finalyear.pdf"><i class="medium material-icons" style="color:white;">link</i></a></sub></h2>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      Bachelor of Science(Physics Honours)</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      2016-2019</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      Percentage : 76.4</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      University 2nd rank holder</h3><hr>
-              <h2 style="color:yellow;">Barrackpore Girls' High School, WBCHSE&nbsp;&nbsp;<sub><a href="class 12_marksheet.pdf"><i class="medium material-icons" style="color:white;">link</i></a></sub></h2>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      12th Standard</h3>
-              <h3 style="padding-left:60px;"><span style="font: size 12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      2014-2016</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;      Percentage : 87.4</h3><hr>
-              <h2 style="color:yellow;"> Ramkrishna Vivekananda Mission Vidyabhavan, WBBSE&nbsp;&nbsp;<sub><a href="class 10_marksheet.pdf"><i class="medium material-icons" style="color:white;">link</i></a></sub></h2>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;       10th Standard</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;       2013-2014</h3>
-              <h3 style="padding-left:60px;"><span style="font-size:12px;">&#10031</span>&nbsp;&nbsp;&nbsp;       Percentage : 89.4</h3>
-          </div><br /><br /><br /><br />
-          <div id="skill">
-              <h1 style="font-style:italic;">Skill...</h1><hr>
-              <ul>
-                  <li>Power BI</li>
-                  <li>C#</li>
-                  <li>OOPS</li>
-                  <li>DSA</li>
-                  <li>DBMS</li>
-                  <li>OS</li>
-                  <li>Web Dev</li>
-              </ul>
-          </div><br /><br /><br />
-          <div id="certi">
-              <h1 style="font-style:italic;text-align:center;">Certifications...</h1><hr>
-              <ul>
-                  <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/PriyaChowdhury-5723/DC684BD55864117B?sharingId" style="color:wheat;"> Microsoft Certified: Power BI Data Analyst Associate</a></li>
-                  <li><a href="https://freecodecamp.org/certification/fcced183a3d-9e83-459e-83ab-f3a5560ac2f0/foundational-c-sharp-with-microsoft" style="color:wheat;">Foundational C# with Microsoft</a></li>
-                  <li><a href="DSA_mysirg.pdf" style=";color:wheat;"> Data structure Through C Language from MySirG.com</a></li>
-                  <li><a href=" https://www.udemy.com/certificate/UC-51b56280-75c5-49ed-a997-7c0cfd88de5b/" style="color:wheat;">C++ Programming from Udemy</a></li>
-                  <li><a href="C_certificate.pdf" style="color:wheat;">C Language from MySirG.com</a></li>
-                  <li><a href="https://files.codingninjas.in/certi_image25244f09e477581247433b375e83b8da83703.jpg" style="color:wheat;">Aptitude Preparation</a></li>
-                  <li><a href="tcs iON_certificate.pdf" style="color:wheat;">TCS iON Career Edge - Young Professional</a></li>
-                  <li><a href="Web Development.pdf" style="color:wheat;">Web Development Training from Internshala</a></li>
-              </ul>
-          </div><br /><br /><br />
-          <div id="project">
-              <h1 style="font-style:italic;text-align:center;">Projects...</h1><hr>
-              <h2 style="color:yellow;text-decoration:underline;">Performance Analyzer</h2>
-              <p style="text-align:justify;">
-                  We are dedicated to tackling the challenge stakeholders encounter with accessing real-time performance data and receiving timely alerts for any issues. Although tools like ADO cater to individual team needs, the requirement to develop distinct dashboards for various teams across projects hinders efficiency and comparison.
-              </p><br />
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img style="border-radius:50%;" src="mypic.jpg"><br><br>
+            <h1 class="hero-title">Hi, I'm Priya Chowdhury</h1>
+            <p class="hero-subtitle">SDE II at S&amp;P Global | Full Stack Developer | Problem Solver</p>
+            <p class="hero-intro">Based in Delhi, passionate about technology and innovation, creating solutions that make a difference</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-button cta-primary">View My Work</a>
+                <a href="PriyaChowdhuryResume_Latest.pdf" class="cta-button cta-secondary">Download Resume</a>
+            </div>
+        </div>
+    </section>
 
-              <h2 style="color:yellow;text-decoration:underline;">Movies App</h2>
-              <p style="text-align:justify;">
-                  Movies App is a web application where users can get to know about all the trending movies, and they can add them to favourites if they want. In favourites, all the records can be sorted according to popularity, genres, and ratings. User can also select their preferred genre and they can get the details of the movies that they have already added to their favourite. Here users can also search by movies name, and they will get to see all the results related to that name. This app is built based on React JS, a JavaScript Library and data are going to be fetched from TMDB API.
-              </p><br />
-              <div id="sub">
-                  <a style="text-decoration:none;font-size:18px;color:pink;" href="https://github.com/Priya077/moviesHub">View Source Code</a>
-              </div>
-              <h2 style="color:yellow;text-decoration:underline;">Ready2Hire</h2>
-              <p style="text-align:justify;">
-                  In this group project, we have developed platform where we not only offer our user to search for better job opportunities in their respective domain, but we also offer users to hire people for themselves or their firms.
-                  We used basic technologies like HTML, CSS, flask, SQLite.
-              </p><br />
-              <div id="sub">
-                  <a style="text-decoration:none;font-size:18px;color:pink;" href="https://github.com/Priya077/AGAMYA">View Source Code</a>
-              </div>
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+        <div class="about-content">
+            <p class="about-text">
+                I was born in West Bengal and completed my schooling there. I have completed my graduation in Physics from West Bengal State University securing 2nd position. With a passion for technology and a robust academic background, I've obtained my Masters of Computer Applications from NIT Trichy. Currently, I'm a Software Development Engineer II (SDE II) at S&amp;P Global, where I'm excited to apply my skills to create innovative solutions. I love collaborating with others and am always eager to learn and grow. Let's make a difference together in the world of software engineering!
+            </p>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <div class="highlight-title">🎓 Education</div>
+                    <p>MCA from NIT Trichy</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-title">💼 Current Role</div>
+                    <p>SDE II at S&amp;P Global</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-title">📍 Location</div>
+                    <p>Delhi, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic Journey</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Master of Computer Applications</h3>
+                    <p class="timeline-institution">National Institute of Technology, Tiruchirappalli (NIT Trichy)</p>
+                    <p class="timeline-duration">2020 - 2023</p>
+                    <p class="timeline-grade">CGPA: 8.07</p>
+                    <p class="timeline-details">Advanced studies in computer applications with focus on software development</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Bachelor of Science (Physics Honours)</h3>
+                    <p class="timeline-institution">Barrackpore Rastraguru Surendranath College, WBSU</p>
+                    <p class="timeline-duration">2016 - 2019</p>
+                    <p class="timeline-grade">Percentage: 76.4%</p>
+                    <p class="timeline-details">University 2nd Rank Holder - Strong foundation in physics and mathematics</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">12th Standard</h3>
+                    <p class="timeline-institution">Barrackpore Girls' High School, WBCHSE</p>
+                    <p class="timeline-duration">2014 - 2016</p>
+                    <p class="timeline-grade">Percentage: 87.4%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">10th Standard</h3>
+                    <p class="timeline-institution">Ramkrishna Vivekananda Mission Vidyabhavan, WBBSE</p>
+                    <p class="timeline-duration">2013 - 2014</p>
+                    <p class="timeline-grade">Percentage: 89.4%</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          </div><br /><br /><br />
-          <div id="achievement">
-              <h1 style="font-style:italic;text-align:center;">Academic Achievements...</h1><hr>
-              <ul>
-                  <li>Secured <span style="color:yellow;font-style:italic;">2nd</span> position in <span style="color:pink;font-style:italic;">Low code/No code</span> hackathon organized by S&P Global .</li>
-                  <li>Runner up in the flagship event<span style="color:pink;font-style:italic;"> AGAMYA</span> of <span style="color:yellow;font-style:italic;">Technofania</span> conducted by OSOC,NIT Trichy.</li>
-                  <li>Secured <span style="color:yellow;font-style:italic;">AIR 352</span> with <span style="color:pink;font-style:italic;">Category Rank 6</span> in NIMCET 2020.</li>
-                  <li>Secured <span style="color:yellow;font-style:italic;">2nd</span> position in graduation among all the colleges under WBSU.</li>
-                  <li>Secured <span style="color:yellow;font-style:italic;">1st</span> position in graduation from Barrackpore Rastraguru Surendranath College,Physics Department.</li>
-                  <li>Awarded <span style="color:yellow;font-style:italic;">Swami Vivekananda West Bengal Government Merit-Cum-Means Scholarship</span> in Graduation for the year 2016-2018.</li>
-              </ul>
-          </div><br /><br /><br />
-          <div id="extra">
-              <h1 style="font-style:italic;text-align:center;">Cocurricular Acitivities...</h1><hr>
-              <ul>
-                  <li>Singer</li>
-                  <li>Designer(Secured 2nd position in Alpana Design Competition in school level)</li>
-                  <li>Designer(Secured 1st position in Alpana Design Competition in college level)</li>
-              </ul>
-          </div><br /><br /><br />
-          <div id="res">
-              <h1 style="font-style:italic;">Responsibilities...</h1><hr>
-              <h2>Web Team</h2>
-              <p style="text-align:justify;">Main responsibilities are to manage and handle any kind of changes and requirements regarding official website of National Institute Of Technology Tiruchirappalli, department of Computer Applications.</p><br />
-              <h2>Public Relation Committee</h2>
-              <p style="text-align:justify;">I am working as a member of PRC in Version'21 which is a National Level MCA Technical Symposium of NIT, Trichy.Here, our motive is to inform students from other Institutes of all over India regarding our events so that they can take part to improve their skills and we also try to resolve their problem if they face any kind of issues at the time of taking part or if they have any clarification regarding our events.</p><br />
-          </div><br /><br /><br />
-          <div id="contact">
-              <div class="heading">
-                  <h1>Contact Details...</h1><hr>
-              </div><br />
-              <div class="container">
-                  <div class="row">
-                      <div class="column">
-                          <div class="card">
-                              <ul style="list-style-type: none;">
-                                  <li style="text-align:left;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
-    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
-</svg></strong> priyachowdhury06583@gmail.com</li><br/>
-                                  <li style="text-align:left;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-</svg></strong>  +91-8420884287</li><br/>
-                                  <li style="text-align:left;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-</svg></strong> Wireless Para, Barrackpore, Kolkata-700122, West Bengal</li>
-                              </ul>
-                          </div>
-                      </div>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Showcasing my recent work</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">Performance Analyzer</h3>
+                <p class="project-description">
+                    Dedicated platform for tackling the challenge stakeholders encounter with accessing real-time performance data and receiving timely alerts for any issues. Although tools like ADO cater to individual team needs, the requirement to develop distinct dashboards for various teams across projects hinders efficiency and comparison. This solution provides unified, real-time analytics across multiple teams and projects.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Real-time Analytics</span>
+                </div>
+                <!-- PLACEHOLDER URL - Replace with your actual GitHub repository URL -->
+                <div class="project-links">
+                    <!-- <a href="https://github.com/Priya077/performance-analyzer" target="_blank" class="project-btn project-btn-github" title="View on GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>View on GitHub</span>
+                    </a> -->
+                </div>
+            </div>
 
-                      <div class="column">
-                          <div class="card">
+            <div class="project-card">
+                <h3 class="project-title">Movies App</h3>
+                <p class="project-description">
+                    Web application where users can discover trending movies, add them to favorites, and manage their collection. Features include sorting by popularity, genres, and ratings. Users can search for movies by name and get detailed information. Built using React JS with data fetched from TMDB API.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">TMDB API</span>
+                    <span class="tech-tag">CSS</span>
+                </div>
+                <!-- PLACEHOLDER URL - Replace with your actual GitHub repository URL -->
+                <div class="project-links">
+                    <a href="https://github.com/Priya077/moviesHub" target="_blank" class="project-btn project-btn-github" title="View on GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
 
-                              <a href="https://github.com/Priya077" style="padding:25px; color:white;"><i class="fa fa-github fa-3x"></i></a>
-                              <a href="https://www.linkedin.com/in/priya-chowdhury-849741213/" style="padding:25px; color:white;"><i class="fa fa-linkedin fa-3x"></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="footer">
-              <p></p>
-          </div>
-  </body>
+            <div class="project-card">
+                <h3 class="project-title">Ready2Hire</h3>
+                <p class="project-description">
+                    Group project - A job portal platform offering dual functionality: users can search for job opportunities in their domain, and employers can hire candidates for their firms. A comprehensive platform connecting job seekers with employers.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">SQLite</span>
+                </div>
+                <!-- PLACEHOLDER URL - Replace with your actual GitHub repository URL -->
+                <div class="project-links">
+                    <a href="https://github.com/Priya077/AGAMYA" target="_blank" class="project-btn project-btn-github" title="View on GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title">Skills &amp; Expertise</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3 class="skill-category-title">Languages</h3>
+                <div class="skill-list">
+                    <span class="skill-item">C#</span>
+                    <span class="skill-item">C++</span>
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">React</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Technical</h3>
+                <div class="skill-list">
+                    <span class="skill-item">OOPS</span>
+                    <span class="skill-item">Data Structures &amp; Algorithms</span>
+                    <span class="skill-item">Database Management Systems</span>
+                    <span class="skill-item">Operating Systems</span>
+                    <span class="skill-item">Web Development</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Tools</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Power BI</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">VS Code</span>
+                    <span class="skill-item">SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <h2 class="section-title">Academic Achievements</h2>
+        <p class="section-subtitle">Recognition &amp; Awards</p>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <p class="achievement-text">Secured 2nd position in Low code/No code hackathon organized by S&amp;P Global</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🥈</div>
+                <p class="achievement-text">Runner up in the flagship event AGAMYA of Technofania conducted by OSOC, NIT Trichy</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🎓</div>
+                <p class="achievement-text">Secured AIR 6 in NIMCET(NIT MCA Entrance Test) 2020</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🌟</div>
+                <p class="achievement-text">Secured 2nd position in graduation among all colleges under WBSU</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🥇</div>
+                <p class="achievement-text">Secured 1st position in graduation from Barrackpore Rastraguru Surendranath College, Physics Department</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🎯</div>
+                <p class="achievement-text">Awarded Swami Vivekananda West Bengal Government Merit-Cum-Means Scholarship in Graduation for the years 2016-2018</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section" id="activities">
+        <h2 class="section-title">Co-curricular Activities &amp; Responsibilities</h2>
+        <p class="section-subtitle">Beyond Academics</p>
+        <div class="activities-container">
+            <div class="activity-card">
+                <div class="activity-header">
+                    <span class="activity-icon">🤝</span>
+                    <h3 class="activity-title">Girls Who Code</h3>
+                </div>
+                <p class="activity-description">Empowering young talents and investing in the future generation of tech leaders by providing guidance and support throughout their journeys.</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-header">
+                    <span class="activity-icon">🎨</span>
+                    <h3 class="activity-title">Designer - Alpana Design</h3>
+                </div>
+                <p class="activity-description">Secured 2nd position in Alpana Design Competition at school level and 1st position at college level</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-header">
+                    <span class="activity-icon">💻</span>
+                    <h3 class="activity-title">Web Team Member</h3>
+                </div>
+                <p class="activity-description">Main responsibilities are to manage and handle any kind of changes and requirements regarding official website of National Institute Of Technology Tiruchirappalli, Department of Computer Applications.</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-header">
+                    <span class="activity-icon">🤝</span>
+                    <h3 class="activity-title">Public Relations Committee Member</h3>
+                </div>
+                <p class="activity-description">Working as a member of PRC in Version'21, a National Level MCA Technical Symposium of NIT Trichy. Responsible for informing students from other institutes across India regarding events, handling inquiries, and resolving issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's connect and create something amazing together</p>
+        <div class="contact-wrapper">
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                </form>
+                <div class="form-message" id="formMessage"></div>
+            </div>
+            <div class="contact-info-sidebar">
+                <h3 class="sidebar-title">Contact Information</h3>
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <div>
+                        <p class="info-label">Email</p>
+                        <a href="mailto:priyachowdhury06583@gmail.com" class="info-value">priyachowdhury06583@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <p class="info-label">Location</p>
+                        <p class="info-value">Delhi, India</p>
+                    </div>
+                </div>
+                <div class="social-links-sidebar">
+                    <h4 class="social-title">Connect With Me</h4>
+                    <div class="social-buttons">
+                        <a href="https://github.com/Priya077" target="_blank" class="social-btn" title="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/priya-chowdhury-849741213/" target="_blank" class="social-btn" title="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="footer-text">
+                &copy; 2025 Priya Chowdhury. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Management
+        let currentTheme = 'light';
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function setTheme(theme) {
+            currentTheme = theme;
+            document.documentElement.setAttribute('data-color-scheme', theme);
+            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // Mobile Menu Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.navbar-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.textContent = '☰';
+                }
+            });
+        });
+
+        // Smooth scroll with offset for fixed navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 70;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navbar.style.boxShadow = 'var(--shadow-md)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Validate form
+            if (!name || !email || !message) {
+                showMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Show success message
+            showMessage("Thank you! Your message has been sent. I'll get back to you soon.", 'success');
+
+            // Reset form
+            contactForm.reset();
+
+            // In a real implementation, you would send the form data to a backend service
+            // Example: using EmailJS, Formspree, or your own backend API
+            // fetch('/api/contact', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify({ name, email, subject, message })
+            // });
+        });
+
+        function showMessage(text, type) {
+            formMessage.textContent = text;
+            formMessage.className = 'form-message ' + type;
+            
+            // Auto-hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
 </html>
